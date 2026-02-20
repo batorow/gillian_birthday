@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Gillian! — Scotland's Finest</title>
+
+  <!-- Social preview (update og:image to your hosted URL if needed) -->
+  <meta property="og:title" content="Happy Birthday, Gillian! — Scotland's Finest" />
+  <meta property="og:description" content="A Monty Python–ish birthday poem, featuring a white dove." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="gillian-poem-card.png" />
+
+  <style>
+    :root {
+      --bg1: #0f2c24;
+      --bg2: #1f4f3f;
+      --card: #f5f4f0;
+      --ink: #192823;
+      --muted: #4b5f5a;
+      --gold: #dcb75f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .wrap {
+      width: min(980px, 100%);
+      display: grid;
+      gap: 18px;
+    }
+    .hero {
+      display: grid;
+      gap: 14px;
+      align-items: center;
+      justify-items: center;
+    }
+    .preview {
+      width: 100%;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+    .preview img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 26px 26px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 3vw, 40px);
+      letter-spacing: .2px;
+    }
+    h2 {
+      margin: 8px 0 0;
+      font-size: clamp(18px, 2vw, 22px);
+      color: #8d6b1e;
+      font-weight: 700;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .icons {
+      display: flex;
+      gap: 10px;
+      font-size: 24px;
+      opacity: .9;
+    }
+    pre {
+      margin: 18px 0 0;
+      white-space: pre-wrap;
+      font-family: inherit;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 650;
+      background: rgba(255,255,255,.10);
+      color: white;
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    a.button:hover {
+      background: rgba(255,255,255,.14);
+    }
+    .small {
+      font-size: 12px;
+      opacity: .9;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="preview" aria-label="Share card image">
+        <img src="gillian-poem-card.png" alt="Birthday poem card for Gillian" />
+      </div>
+
+      <a class="button" href="gillian-poem-card.png" download>
+        ⬇️ Download the graphic <span class="small">(optional)</span>
+      </a>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div>
+          <h1>Happy Birthday, Gillian!</h1>
+          <h2>Scotland's Finest</h2>
+        </div>
+        <div class="icons" title="Symbols">
+          <span aria-hidden="true">🕊️</span>
+          <span aria-hidden="true">🥃</span>
+        </div>
+      </div>
+
+      <pre>Och, Gillian — a woman of grace,
+With warmth in her heart and a smile on her face,
+She'll charm every room from the Highlands tae Fife,
+Then politely improve the meaning of life.
+
+With wit sharp as whisky (and twice as alarming),
+She’s clever, composed — and dangerously charming,
+A glare that could halt even midges mid-flight,
+Then laughter erupts — and restores all to right.
+
+And lo! we present (no small feat, we confess),
+A dove of pure white — though it makes not a mess,
+It won’t coo at dawn, nor flap round the room,
+But brings peace all the same (and requires no broom).
+
+A symbol, of course — lest meaning be missed,
+Of calm, love, and all that’s delightfully crisp,
+Though if it takes off, do not be alarmed —
+It’s only the whisky… you’ve come to no harm.
+
+So raise up a dram — here's tae you, dear hen,
+May your days be as braw as the best of the Ben!</pre>
+
+      <p class="note">Tip: when you host this online, keep <b>gillian-poem.html</b> and <b>gillian-poem-card.png</b> in the same folder.</p>
+      <div class="btns">
+        <a class="button" href="#" onclick="navigator.clipboard.writeText(window.location.href); return false;">🔗 Copy page link</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
